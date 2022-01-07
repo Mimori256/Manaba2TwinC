@@ -445,13 +445,14 @@ const createICS = (idList, kdb) => {
           icsEvent =
             addReschedule(rescheduleIndex, period) +
             getMisc(name, classroom, description);
-          output += eventBegin + icsEvent + eventEnd + "END:VCALENDAR\n";
+          output += eventBegin + icsEvent + eventEnd; 
         }
       }
     }
   }
 
   //determine the file name from time
+  output += "END:VCALENDAR\n";
   const date = new Date();
   let month = date.getMonth() + 1;
   const day = date.getDate();
