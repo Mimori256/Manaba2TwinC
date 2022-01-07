@@ -498,11 +498,14 @@ function main() {
   }
 }
 
+
 let button = document.createElement("button");
 button.innerText = "Import TwinC";
 button.onclick = function () {
   main();
 };
 
-let coursememo = document.getElementById("coursememo");
-coursememo.appendChild(button);
+if (document.getElementsByClassName("coursecode").length !== 0) {
+  let coursememo = document.getElementById("coursememo");
+  coursememo.appendChild(button);
+}
