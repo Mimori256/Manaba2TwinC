@@ -1,0 +1,17 @@
+{
+  "name": "Manaba2TwinC",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "manabaのコースページからicsファイルを生成する",
+  "icons": {
+    "48": "48.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://manaba.tsukuba.ac.jp/ct/home*"],
+    "js": [ "content.js" ]
+  }],
+  "web_accessible_resources": [
+    "kdb_twinc.json"
+  ]
+}
+
