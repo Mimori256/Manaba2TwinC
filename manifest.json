@@ -7,7 +7,7 @@
     "48": "48.png"
   },
   "content_scripts": [{
-    "matches": ["https://manaba.tsukuba.ac.jp/ct/home*"],
+    "matches": ["https://manaba.tsukuba.ac.jp/ct/home"],
     "js": [ "content.js" ]
   }],
   "web_accessible_resources": [
